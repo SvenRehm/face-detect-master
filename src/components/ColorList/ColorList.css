@@ -1,0 +1,38 @@
+ul {
+   position: absolute;
+   right: -400px;
+   top: 150px;
+   margin: 0;
+   padding: 0;
+   /* 
+   top: 50%;
+   transform: translate(0, -50%); */
+
+   list-style: none;
+   opacity: 0.9;
+   /* box-shadow: 22px 25px 33px 2px rgba(0, 0, 0, 0.77); */
+}
+li {
+   position: relative;
+   line-height: 1.5em;
+   padding: 0.6em 0;
+   width: 350px;
+   border-radius: 3px;
+}
+span.right {
+   position: absolute;
+   right: 15px;
+}
+span.left {
+   position: absolute;
+   left: 15px;
+}
+
+svg {
+   position: absolute;
+   right: -450px;
+   top: 50px;
+
+   margin: 0;
+   padding: 0;
+}

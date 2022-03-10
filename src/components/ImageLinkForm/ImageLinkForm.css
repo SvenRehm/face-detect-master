@@ -1,0 +1,35 @@
+.form {
+   /* width: 700px; */
+   width: 50%;
+   /* margin-bottom: 2em; */
+   margin: 0 auto 4em auto;
+   /* background-size: 20px 30px; */
+
+   background-color: #b9b2dc;
+}
+textarea:focus,
+input:focus {
+   outline: none;
+}
+p {
+   margin: 0;
+   padding: 1.3em 0 1.3em 0;
+   font-size: 2em;
+}
+.submitbutton {
+   /* background-color: rgba(0, 167, 209, 0.897); */
+   background-color: #fee3b8;
+   color: #f08da9;
+   border: none;
+}
+.submitbutton:hover {
+   /* background-color: rgba(0, 167, 209, 0.897); */
+   background-color: #f08da9;
+   color: #fee3b8;
+   border: none;
+}
+.Dropdown-root {
+   width: 200px;
+   text-align: start;
+   margin: 2em auto 0 auto;
+}

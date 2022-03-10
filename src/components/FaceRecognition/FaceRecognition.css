@@ -1,0 +1,18 @@
+.bounding-box {
+   position: absolute;
+   box-shadow: 0 0 0 1px #7dcdff inset;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   cursor: pointer;
+}
+.image {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, 0);
+   z-index: 10;
+}
+
+.bounding-box:hover {
+   background-color: #7dcdff28;
+}

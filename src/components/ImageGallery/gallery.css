@@ -1,0 +1,113 @@
+* {
+   box-sizing: border-box;
+}
+.wrap {
+   /* background-color: rgba(83, 83, 83, 0.979); */
+
+   height: 99%;
+}
+.container {
+   position: relative;
+   width: 50%;
+   height: 99%;
+   margin: 0 auto;
+}
+
+.mySlides {
+   display: none;
+
+   width: 500px;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, 0);
+   animation: pictureanimation 0.3s ease-in-out;
+   opacity: 1;
+   object-fit: cover;
+}
+
+.mySlides img {
+   height: auto;
+   margin: 0;
+   padding: 0;
+}
+
+.row {
+   height: 150px;
+   overflow: hidden;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Six columns side by side */
+.column {
+   float: left;
+   /* width: 16.66%; */
+   /* width: 10%; */
+}
+
+.column img {
+   height: 200px;
+   overflow: hidden;
+   object-fit: cover;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+   opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+   opacity: 1;
+}
+
+.cursor {
+   cursor: pointer;
+}
+
+.face-bounding-box {
+   position: absolute;
+   box-shadow: 0 0 0 1px #7dcdff inset;
+
+   /* display: flex; */
+   /* flex-wrap: wrap;
+   justify-content: center; */
+   cursor: pointer;
+
+   animation: boxzoom 0.3s linear;
+   animation-fill-mode: both;
+
+   transform: scale(1);
+   object-fit: cover;
+}
+.face-bounding-box:hover {
+   background-color: #7dcdff17;
+}
+
+@keyframes boxzoom {
+   from {
+      transform: scale(1.6);
+      opacity: 0;
+      /* transform: rotate(0deg); */
+   }
+   to {
+      transform: scale(1);
+      opacity: 1;
+      /* transform: rotate(180deg); */
+   }
+}
+
+@keyframes pictureanimation {
+   from {
+      opacity: 0;
+      /* transform: rotate(0deg); */
+   }
+   to {
+      opacity: 1;
+      /* transform: rotate(180deg); */
+   }
+}
