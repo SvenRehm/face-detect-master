@@ -128,7 +128,8 @@ class App extends Component {
    fetchFaceDetect = (imageurl, key) => {
       this.setState({ currentImage: key })
       this.setState({ box: [], loading: true })
-      fetch("http://localhost:3001/imageurl", {
+      
+      fetch("https://git.heroku.com/face-detect-api-33.git/imageurl", {
          method: "post",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({
@@ -155,7 +156,7 @@ class App extends Component {
       this.setState({ currentImage: key })
       this.setState({ box: [], loading: true })
       
-      fetch("http://localhost:3001/imageurl", {
+      fetch("https://git.heroku.com/face-detect-api-33.git/imageurl", {
          method: "post",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({
@@ -177,7 +178,7 @@ class App extends Component {
 // COLOR DETECT LATER
    fetchColorDetect = (imageurl, key) => {
       this.setState({ currentImage: key })
-      fetch("http://localhost:3001/color", {
+      fetch("https://git.heroku.com/face-detect-api-33.git/color", {
          method: "post",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({
