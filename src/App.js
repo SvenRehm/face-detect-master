@@ -119,10 +119,7 @@ class App extends Component {
    }
 
    onButtonSubmit = () => {
-      var checkforlink=this.state.input.match(/\.(jpeg|jpg|gif|png)$/)
-      console.log(checkforlink)
       this.fetchFaceDetect(this.state.input, this.state.images.length)
-     
    }
 
    fetchFaceDetect = (imageurl, key) => {
@@ -139,11 +136,11 @@ class App extends Component {
      
          .then(response => response.json())
          .then(response => {
-            console.log(response)
-            console.log("click")
-            this.setState({ loading: false })
+         
+           
             this.onAddItem()
-             this.displayFaceBox(this.calculateFaceLocation(response))
+            this.displayFaceBox(this.calculateFaceLocation(response))
+            this.setState({ loading: false })
             // this.displayFaceBox2(this.calculateFaceLocation(response))
          })
       
