@@ -17,8 +17,8 @@ class Gallery extends Component {
          images,
          box,
          loading,
-         fetchColorDetect,
-         fetchFaceDetectonLoad
+
+         fetchFaceDetectonLoad,
       } = this.props
 
       const allimages = images.map((i, key) => {
@@ -32,20 +32,20 @@ class Gallery extends Component {
                   className="demo cursor"
                   src={i.picture}
                   style={{ width: "100%" }}
-                  alt="The Woods"
+                  alt="face detect"
                   onClick={() => {
-                     // this.setState({ currentImage: key })
-                     {loading===false?fetchFaceDetectonLoad(images[key].picture, key):""}
-                     // fetchFaceDetectonLoad(images[key].picture, key)
+                     loading === false
+                        ? fetchFaceDetectonLoad(images[key].picture, key)
+                        : ""
+
                      // fetchColorDetect(images[key].picture, key)
-                   
                   }}
                />
             </div>
          )
       })
 
-      const boxes = box.length>=1?box.map(function(i, index) {
+      const boxes = box.map(function (i, index) {
          return (
             <div
                className="face-bounding-box"
@@ -54,13 +54,11 @@ class Gallery extends Component {
                   top: i.topRow,
                   right: i.rightCol,
                   bottom: i.bottomRow,
-                  left: i.leftCol
+                  left: i.leftCol,
                }}
             ></div>
          )
-      }):""
-
-     
+      })
 
       const allBigImages = images.map((i, key) => {
          return (
@@ -78,11 +76,9 @@ class Gallery extends Component {
                   alt="asdad"
                   src={i.picture}
                   width="100%"
-                  // height="100%"
                />
-               {loading===false?boxes:""}
-               {/* {boxes} */}
-              
+               {/* {loading===false?boxes:""} */}
+               {boxes}
             </div>
          )
       })
@@ -92,10 +88,8 @@ class Gallery extends Component {
          <div className="wrap">
             <div className="container">
                {/* <ColorList colors={this.props.colors} /> */}
-
                <div className="row">{allimages}</div>
                {allBigImages}
-              {console.log(allBigImages)}
             </div>
          </div>
       )

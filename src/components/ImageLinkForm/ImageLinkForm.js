@@ -1,11 +1,11 @@
 import React from "react"
 import "./ImageLinkForm.css"
-import Dropdown from "react-dropdown"
+// import Dropdown from "react-dropdown"
 import "react-dropdown/style.css"
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit, onSelect }) => {
-   const options = ["FaceDetect", "ColorDetect"]
-   const defaultOption = options[0]
+   // const options = ["FaceDetect", "ColorDetect"]
+   // const defaultOption = options[0]
    return (
       <div>
          <p>"Copy an Image Link to find a face"</p>

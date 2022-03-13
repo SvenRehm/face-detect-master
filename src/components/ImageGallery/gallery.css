@@ -15,7 +15,6 @@
 
 .mySlides {
    display: none;
-
    width: 500px;
    bottom: 0;
    left: 50%;
@@ -26,7 +25,9 @@
 }
 
 .mySlides img {
+   /* min-height: 300px;*/
    height: auto;
+   /* height: 200px; */
    margin: 0;
    padding: 0;
 }
