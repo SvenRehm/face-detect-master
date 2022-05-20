@@ -17,7 +17,8 @@ class Gallery extends Component {
          images,
          box,
          loading,
-
+         fetchColorDetect,
+         fetchFaceDetecton,
          fetchFaceDetectonLoad,
       } = this.props
 

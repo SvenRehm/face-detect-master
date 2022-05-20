@@ -117,9 +117,7 @@ class App extends Component {
    }
 
    onButtonSubmit = () => {
-      this.state.input.length >= 2
-         ? this.fetchFaceDetect(this.state.input, this.state.images.length)
-         : null
+      this.fetchFaceDetect(this.state.input, this.state.images.length)
    }
 
    fetchFaceDetect = (imageurl, key) => {
