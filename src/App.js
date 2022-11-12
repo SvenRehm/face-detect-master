@@ -124,7 +124,7 @@ class App extends Component {
       this.setState({ currentImage: key })
       this.setState({ box: [], loading: true })
       this.onAddItem()
-      fetch("https://face-detect-api-33.herokuapp.com/imageurl", {
+      fetch("https://careful-wetsuit-crab.cyclic.app/imageurl", {
          method: "post",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({
@@ -145,7 +145,7 @@ class App extends Component {
       this.setState({ currentImage: key })
       this.setState({ box: [], loading: true })
 
-      fetch("https://face-detect-api-33.herokuapp.com/imageurl", {
+      fetch("https://careful-wetsuit-crab.cyclic.app/imageurl", {
          method: "post",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({
@@ -164,7 +164,7 @@ class App extends Component {
    // COLOR DETECT LATER
    fetchColorDetect = (imageurl, key) => {
       this.setState({ currentImage: key })
-      fetch("https://face-detect-api-33.herokuapp.com/color", {
+      fetch("https://careful-wetsuit-crab.cyclic.app/color", {
          method: "post",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({
